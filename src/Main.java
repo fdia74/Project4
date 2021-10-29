@@ -2,16 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         int initialAmount = 100;
-        int depositAmount = 1100;
-        int bonus;
+        int depositAmount = 1500;
+        int bonus = (depositAmount > 1000) ? depositAmount / 100 : 0;
 
-        if (depositAmount > 1000) {
-            bonus = depositAmount / 100;
-        } else {
-            bonus = 0;
-        }
         System.out.println("Итоговый бонус:" + bonus);
-
         System.out.println("Итоговая сумма:" + (initialAmount + bonus + depositAmount));
 
         // Объявляете переменные для входных данных и
